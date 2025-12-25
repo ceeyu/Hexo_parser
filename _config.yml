@@ -14,11 +14,12 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://xian-hexo-blog-2025.s3-website-ap-northeast-1.amazonaws.com
-permalink: :year/:month/:day/:title/
+root: /
+permalink: :title.html
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: true
+  trailing_html: true
 
 # Directory
 source_dir: source
@@ -100,9 +101,7 @@ theme: fast-theme
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# 注意：由於 hexo-deployer-aws-s3 在 Windows 上有路徑問題
+# 請使用 tools/部署到S3.cmd 腳本進行部署
 deploy:
-  type: aws-s3
-  bucket: xian-hexo-blog-2025
-  region: ap-northeast-1
-  # 可選：如果使用 CloudFront CDN
-  # cloudfront: <your-distribution-id>
+  type: ''

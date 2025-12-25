@@ -22,5 +22,9 @@
   
   <!-- 完整樣式表（異步加載） -->
   <link rel="stylesheet" href="<%- url_for('/css/style.css') %>" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="<%- url_for('/css/style.css') %>"></noscript>
+  <link rel="stylesheet" href="<%- url_for('/css/animations.css') %>" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
+    <link rel="stylesheet" href="<%- url_for('/css/animations.css') %>">
+  </noscript>
 </head>

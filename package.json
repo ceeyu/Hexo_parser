@@ -6,6 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
+    "deploy:s3": "node tools/deploy-to-s3.js",
+    "deploy:full": "npm run clean && npm run build && npm run deploy:s3",
     "server": "hexo server"
   },
   "hexo": {
@@ -23,5 +25,10 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.958.0",
+    "@aws-sdk/credential-providers": "^3.958.0",
+    "mime-types": "^3.0.2"
   }
 }

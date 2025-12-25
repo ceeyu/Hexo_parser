@@ -406,6 +406,7 @@ a:hover {
   font-size: 36px;
   font-weight: 800;
   margin-bottom: 48px;
+  padding-top: 20px;  /* 避免被 header 擋住 */
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1047,7 +1048,7 @@ a:hover {
 
 .category-header {
   text-align: center;
-  padding: 40px 0;
+  padding: 60px 0 40px;  /* 上方加 padding 避免被 header 擋住 */
   margin-bottom: 40px;
   border-bottom: 1px solid var(--border);
 }
@@ -1150,4 +1151,38 @@ a:hover {
     gap: 8px;
     width: 100%;
   }
+}
+
+
+/* ===== 獨立頁面樣式 ===== */
+.page-content {
+  padding-top: 40px;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 32px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-body {
+  font-size: 18px;
+  line-height: 2;
+  color: var(--text-light);
+}
+
+.page-body h1 {
+  font-size: 48px;
+  color: var(--cyber-cyan);
+  text-shadow: var(--neon-glow);
+  margin-bottom: 24px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.page-body p {
+  margin-bottom: 16px;
 }

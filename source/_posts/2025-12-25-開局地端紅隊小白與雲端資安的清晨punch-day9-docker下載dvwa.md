@@ -1,12 +1,9 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day9 Docker下載DVWA
-date: 2024-08-19 09:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day9 Docker下載DVWA"
+date: 2025-12-25
 tags: [dvwa, 資訊安全]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10345290
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 # 壹、Docker下載

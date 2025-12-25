@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～到了資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day1 今晚，我想來點Flutter!
-date: 2023-09-09 01:00:00
+title: "無職轉生～到了資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day1 今晚，我想來點Flutter!"
+date: 2025-12-25
 tags: [flutter]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10314945
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 # 壹、什麼是跨平台開發語言?

@@ -1,12 +1,9 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day28 設定SIEM條件(上)
-date: 2024-09-07 28:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day28 設定SIEM條件(上)"
+date: 2025-12-25
 tags: [wazuh, 資訊安全]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10348470
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 # 監測端

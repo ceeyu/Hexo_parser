@@ -1,12 +1,9 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day29 設定SIEM條件(下)
-date: 2024-09-08 29:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day29 設定SIEM條件(下)"
+date: 2025-12-25
 tags: [wazuh, 資訊安全]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10348622
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 ## 連結掛載
@@ -286,12 +283,26 @@ Rule
 
 以下是逐步指南來確定 Wazuh 安全事件是否已經被索引到 OpenSearch 中：
 
-1. $1
+1. 確認 OpenSearch 的設置：
+確保 OpenSearch 已經安裝並運行。
+確保你具有管理 OpenSearch 的權限。
 
-2. $1
+2. 確認 Wazuh 的配置：
+確保 Wazuh Manager 已經配置為將安全事件發送到 OpenSearch。
+檢查 Wazuh Manager 的配置文件，確保 ossec.conf 中的 <elasticsearch_output> 部分正確設置了 OpenSearch 的連接信息。
 
-3. $1
+3. 創建索引模式：
+在 OpenSearch Dashboards 中，導航至 "Management" > "Index Patterns"。
+點擊 "Create index pattern" 按鈕。
+輸入索引模式名稱，例如 "wazuh-alerts-*"。
+選擇時間戳字段。
+點擊 "Create index pattern" 按鈕創建索引模式。
 
-4. $1
+4. 檢查索引內容：
+在 OpenSearch Dashboards 中，導航至 "Discover" 頁面。
+在索引模式下拉菜單中選擇剛剛創建的索引模式。
+瀏覽數據，確保你能夠找到安全事件相關的數據。
 
-5. $1
+5. 檢查索引狀態：
+在 OpenSearch Dashboards 中，導航至 "Management" > "Index Management"。
+確保相應的索引狀態正常，如果有任何問題，可以嘗試重新索引或修復索引。

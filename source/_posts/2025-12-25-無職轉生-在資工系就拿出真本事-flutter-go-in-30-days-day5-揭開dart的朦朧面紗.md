@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day5 揭開Dart的朦朧面紗
-date: 2023-09-13 05:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day5 揭開Dart的朦朧面紗"
+date: 2025-12-25
 tags: [flutter, dart]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10314954
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 # 壹、為什麼Flutter要使用Dart?
@@ -126,6 +123,6 @@ categories:
 **Future**是什麼?
 
 **async 與await**在Future中的應用
-1. $1
+1. 將**try-catch**應用於錯誤處理
 
 **綜合**統整與實作

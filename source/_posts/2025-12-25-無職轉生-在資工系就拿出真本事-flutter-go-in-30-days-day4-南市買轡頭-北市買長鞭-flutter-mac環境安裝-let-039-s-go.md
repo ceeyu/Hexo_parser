@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day4 南市買轡頭，北市買長鞭--Flutter Mac環境安裝 Let&#039;s Go!
-date: 2023-09-12 04:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day4 南市買轡頭，北市買長鞭--Flutter Mac環境安裝 Let&#039;s Go!"
+date: 2025-12-25
 tags: [flutter, mac環境安裝]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10314952
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 # 壹、M1 Mac設定
@@ -17,9 +14,9 @@ categories:
 
 在Mac上運行Flutter的最低需求如下:
 
-1. $1
+1. 作業系統: macOS，版本 10.14 (Mojave)
 
-2. $1
+2. 硬碟空間: 2.8 GB (本限制不包含IDE與其他工具的佔用空間)
 
 其他工具: Xcode與Git兩者均為點選安裝連結並接續按下同意、下一步至安裝結束
 

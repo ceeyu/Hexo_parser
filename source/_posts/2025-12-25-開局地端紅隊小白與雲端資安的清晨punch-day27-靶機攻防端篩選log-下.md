@@ -1,12 +1,9 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day27 靶機攻防端篩選Log(下)
-date: 2024-09-06 27:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day27 靶機攻防端篩選Log(下)"
+date: 2025-12-25
 tags: [資訊安全, wazuh]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10348179
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 ## Docker Log

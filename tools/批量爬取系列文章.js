@@ -146,7 +146,7 @@ function parseArticle(html) {
     })
     .replace(/<ol[^>]*>(.*?)<\/ol>/gs, (match, list) => {
       let counter = 1;
-      return list.replace(/<li[^>]*>(.*?)<\/li>/g, () => `${counter++}. $1\n`);
+      return list.replace(/<li[^>]*>(.*?)<\/li>/g, (m, item) => `${counter++}. ${item}\n`);
     })
     .replace(/<a[^>]*href="([^"]*)"[^>]*>(.*?)<\/a>/g, '[$2]($1)')
     .replace(/<img[^>]*src="([^"]*)"[^>]*alt="([^"]*)"[^>]*>/g, '![$2]($1)')

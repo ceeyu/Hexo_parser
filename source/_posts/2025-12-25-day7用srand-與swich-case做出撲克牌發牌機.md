@@ -1,12 +1,9 @@
 ---
-title: DAY7用srand()與swich/case做出撲克牌發牌機
-date: 2022-09-08 07:00:00
+title: "DAY7用srand()與swich/case做出撲克牌發牌機"
+date: 2025-12-25
 tags: []
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10288497
-series: C++ 基礎教學
-categories:
-  - C++ 基礎教學
 ---
 
 ## 題目:

@@ -85,6 +85,12 @@ body::before {
   width: 70%;
 }
 
+/* 文章頁面主內容區 - 避開 header */
+.post-page main,
+.post-page .site-main {
+  padding-top: 20px;
+}
+
 /* ===== 連結 ===== */
 a {
   color: var(--primary);
@@ -523,6 +529,7 @@ a:hover {
   margin: 40px 0 20px;
   font-weight: 700;
   line-height: 1.4;
+  scroll-margin-top: 100px;  /* 避免被 header 擋住 */
 }
 
 .post-content h1 { font-size: 32px; }

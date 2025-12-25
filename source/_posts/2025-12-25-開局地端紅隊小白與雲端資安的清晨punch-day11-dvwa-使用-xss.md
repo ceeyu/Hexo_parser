@@ -1,12 +1,9 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day11 DVWA 使用(XSS)
-date: 2024-08-21 11:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day11 DVWA 使用(XSS)"
+date: 2025-12-25
 tags: [xss, 資訊安全, dvwa]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10345605
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 # 肆、DVWA 官方文件 --- Features

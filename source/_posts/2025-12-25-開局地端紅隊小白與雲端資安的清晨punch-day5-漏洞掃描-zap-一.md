@@ -1,12 +1,9 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day5、漏洞掃描---ZAP(一)
-date: 2024-08-15 05:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day5、漏洞掃描---ZAP(一)"
+date: 2025-12-25
 tags: [zap, 資訊安全]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10344732
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 # 壹、漏洞掃描---ZAP(一)
@@ -25,7 +22,7 @@ sudo apt-get install -f
 執行
 google-chrome
 
-1. $1
+1. 或是由遠端桌面直接開啟Chrome
 
 ![image](https://hackmd.io/_uploads/BygCl9JcR.png)
 

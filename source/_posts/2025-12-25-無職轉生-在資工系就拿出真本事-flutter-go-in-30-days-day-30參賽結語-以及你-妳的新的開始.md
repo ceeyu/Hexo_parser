@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day 30參賽結語，以及你/妳的新的開始
-date: 2023-10-09 30:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day 30參賽結語，以及你/妳的新的開始"
+date: 2025-12-25
 tags: [flutter, dart]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10336279
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 # 壹、30天章程回顧

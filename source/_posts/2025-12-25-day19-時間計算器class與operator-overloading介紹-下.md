@@ -1,12 +1,9 @@
 ---
-title: DAY19 時間計算器Class與operator overloading介紹(下)
-date: 2022-09-20 19:00:00
+title: "DAY19 時間計算器Class與operator overloading介紹(下)"
+date: 2025-12-25
 tags: []
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10289299
-series: C++ 基礎教學
-categories:
-  - C++ 基礎教學
 ---
 
 ## 題目:

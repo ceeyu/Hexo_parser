@@ -1,12 +1,9 @@
 ---
-title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day19: RPCSS Activation Kernel Security Callback Privilege Escalation漏洞介紹"
-date: 2024-08-29 19:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day19： RPCSS Activation Kernel Security Callback Privilege Escalation漏洞介紹"
+date: 2025-12-25
 tags: [漏洞介紹, 資訊安全]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10346778
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 # 壹、尋找漏洞
@@ -51,17 +48,17 @@ Microsoft Windows 10 1903/1809 - RPCSS Activation Kernel Security Callback Privi
 攻擊方法
 攻擊者通常會採取以下步驟利用此漏洞：
 
-1. $1
+1. 利用漏洞: 攻擊者需要找到並利用該漏洞來觸發特權提升。這可能涉及利用系統中的弱點或利用不安全的操作來觸發漏洞。
 
-2. $1
+2. 執行惡意代碼: 一旦漏洞被利用，攻擊者可以在系統上執行惡意代碼，以更高的權限進行操作。
 
 緩解措施
 為了防止此漏洞的利用，建議采取以下措施：
 
-1. $1
+1. 安裝更新: 確保系統安裝了所有最新的安全更新和補丁。Microsoft 通常會針對這類漏洞發布補丁，修補漏洞以防止利用。
 
-2. $1
+2. 監控系統: 監控系統和網絡活動，檢測可疑行為和異常活動，以便及早發現和應對潛在的攻擊。
 
-3. $1
+3. 限制權限: 儘量限制普通用戶的系統權限，避免用戶擁有過多的系統權限，減少潛在的攻擊面
 
 ### 涉及Windows kernel API而 改用其他漏洞

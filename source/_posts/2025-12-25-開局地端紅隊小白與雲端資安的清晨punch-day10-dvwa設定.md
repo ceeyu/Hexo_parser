@@ -1,12 +1,9 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day10 DVWA設定
-date: 2024-08-20 10:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day10 DVWA設定"
+date: 2025-12-25
 tags: [dvwa, 資訊安全]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10345465
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 # 貳、DVWA環境設置

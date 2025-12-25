@@ -1,12 +1,9 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day12 DVWA 使用(SQL injection)
-date: 2024-08-22 12:00:00
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day12 DVWA 使用(SQL injection)"
+date: 2025-12-25
 tags: [sql injection, 資訊安全, dvwa]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10345746
-series: 雲端資安
-categories:
-  - 雲端資安
 ---
 
 # 陸、Usage(使用方式) --- SQL injection

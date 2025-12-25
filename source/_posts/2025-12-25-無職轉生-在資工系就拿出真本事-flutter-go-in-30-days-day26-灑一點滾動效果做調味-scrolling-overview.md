@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day26 灑一點滾動效果做調味，Scrolling Overview
-date: 2023-10-04 26:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day26 灑一點滾動效果做調味，Scrolling Overview"
+date: 2025-12-25
 tags: [flutter, scrolling]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10333862
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 參見: [Flutter Scrolling](https://docs.flutter.dev/ui/layout/scrolling)

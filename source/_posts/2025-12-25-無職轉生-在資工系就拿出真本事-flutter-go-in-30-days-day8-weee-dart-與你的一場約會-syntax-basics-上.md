@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day8 Weee，Dart，與你的一場約會，Syntax Basics(上)
-date: 2023-09-16 08:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day8 Weee，Dart，與你的一場約會，Syntax Basics(上)"
+date: 2025-12-25
 tags: [flutter, dart]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10314958
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 # 壹、Syntax Basics--- Variables
@@ -89,13 +86,13 @@ String? name  // name可為null或string(即為"Nullable type")
 String name   // name可為string，但不可為null(即為"Non-nullable type")
 ```
 
-1. $1
+1. Dart必須在使用變數之前對它進行初始化
 
 - 對於"Nullable type"，Dart設定初值即為"null"
 
 - 對於"Non-nullable type"，並無初始值且需要自行手動設定，若沒有經過設定而使用此變數會導致系統報錯
 
-1. $1
+1. 則一個"Nullable type"變數的值為 null時，不能對這個「變數」進行表達或調用方法。因為null 不支援任何屬性或方法。但我們可以對"null"本身作 toString()或 hashCode 的處理再使用
 
 ```
 // --------error報錯，因為直接使用了一個值為null的變數
@@ -170,9 +167,9 @@ Default value範例
 
 使用 late 是告訴 Dart的編譯器，保證該變數在使用之前一定會被初始化，因此不需要在宣告時立即給予初始值。並且在後續的編譯控制流分析中視該變數為非空，並且不再提出錯誤。包含兩種情況
 
-1. $1
+1. 宣告一個非空變數，在宣告後再進行初始化。
 
-2. $1
+2. 延遲初始化一個變數。
 
 這在處理一些特殊情況時十分有用，例如當你確定某個變數在某些程式碼路徑中一定會被初始化，便可以使用 late 修飾符解決這個問題，舉例如下
 

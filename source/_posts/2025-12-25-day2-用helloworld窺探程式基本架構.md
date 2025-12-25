@@ -1,12 +1,9 @@
 ---
-title: DAY2 用HelloWorld窺探程式基本架構
-date: 2022-09-03 02:00:00
+title: "DAY2 用HelloWorld窺探程式基本架構"
+date: 2025-12-25
 tags: []
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10287413
-series: C++ 基礎教學
-categories:
-  - C++ 基礎教學
 ---
 
 ## 題目:

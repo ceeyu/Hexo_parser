@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day29 灑一點滾動效果做調味，Scrolling parallax effect滾動視差效果
-date: 2023-10-07 29:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day29 灑一點滾動效果做調味，Scrolling parallax effect滾動視差效果"
+date: 2025-12-25
 tags: [flutter, scrolling, parallax]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10334494
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 # 肆、Create a scrolling parallax effect
@@ -17,19 +14,19 @@ categories:
 
 ## 一、元件佈局區塊
 
-1. $1
+1. 入口點與佈景主題設定：
 
 - MyApp Class是應用程式的root元件，繼承自 StatelessWidget。
 
 - 設定了暗黑主題，並將應用程式欄的背景顏色設為 darkBlue。
 
-1. $1
+1. ExampleParallax class：
 
 - 是一個 StatelessWidget，用於建立包含捲動清單的單一子視圖。
 
 - 使用 SingleChildScrollView 建立一個垂直捲動的列，列中包含了多個 LocationListItem 子元件。
 
-1. $1
+1. LocationListItem class：
 
 - 表示捲動清單中的每個項目，包括一個背景圖像和相關資訊。
 
@@ -39,7 +36,7 @@ categories:
 
 - Stack包含了背景圖像、漸層效果和標題資訊。
 
-1. $1
+1. ParallaxFlowDelegate class：
 
 - 是一個自訂的 FlowDelegate，用於實現滾動視差效果。
 
@@ -47,7 +44,7 @@ categories:
 
 paintChildren 方法用於繪製背景圖像，並根據滾動百分比的高度來定位。
 
-1. $1
+1. Parallax class 和 RenderParallax class：
 
 - 用於封裝捲動視差效果的自訂 Widget 和 RenderObject。
 
@@ -57,7 +54,7 @@ paintChildren 方法用於繪製背景圖像，並根據滾動百分比的高度
 
 ## 二、資料區塊
 
-1. $1
+1. Location 資料模型：
 
 - Location class表示一個地點，包括名稱、國家和圖像連結。
 

@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day7 Hiii，Dart，初次見面你好嗎，Introdoction(下)
-date: 2023-09-15 07:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day7 Hiii，Dart，初次見面你好嗎，Introdoction(下)"
+date: 2025-12-25
 tags: [flutter, dart]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10314956
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 # 參、Introduction---Classes, Enums
@@ -19,11 +16,11 @@ categories:
 
 - Class:
 
-1. $1
+1. 類別: "Spacecraft"
 
-2. $1
+2. 屬性: "name", "launchDate", "launchYear"
 
-3. $1
+3. 方法: "describe()"
 
 main()
 當我們要呼叫已創建的class時，就可以在mian()函式中新增符合class定義規則的物件與參數，並帶入欲執行方法
@@ -155,9 +152,9 @@ class Orbiter extends Spacecraft {
 
 Mixin是一種用於在多個類別中重複使用程式碼的機制，通過with關鍵字將Mixin混合到其他類別中，使得類別可以獲得Mixin中定義的功能，提高靈活性。例如，我們定義一個"Piloted"的Mixin，具有
 
-1. $1
+1. 一個"astronauts"變數
 
-2. $1
+2. 一個"describeCrew"方法，描述太空船上的宇航員數量
 
 ```
 // 定義一個混合 (Mixin)

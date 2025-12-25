@@ -1,12 +1,9 @@
 ---
-title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day17 Flutter小試水溫: Building user interfaces(上)"
-date: 2023-09-25 17:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day17 Flutter小試水溫： Building user interfaces(上)"
+date: 2025-12-25
 tags: [flutter, userinterface]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10315311
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 # 壹、Material/Cupertino 組件與手勢說明

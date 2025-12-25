@@ -1,12 +1,9 @@
 ---
-title: DAY21 插入排序法(insertion sort)介紹
-date: 2022-09-22 21:00:00
+title: "DAY21 插入排序法(insertion sort)介紹"
+date: 2025-12-25
 tags: []
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10294880
-series: C++ 基礎教學
-categories:
-  - C++ 基礎教學
 ---
 
 ## 插入排序法(insertion sort)介紹

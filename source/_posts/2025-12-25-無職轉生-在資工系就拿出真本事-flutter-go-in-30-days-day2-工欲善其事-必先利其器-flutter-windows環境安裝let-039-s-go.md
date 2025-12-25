@@ -1,12 +1,9 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day2 工欲善其事，必先利其器--Flutter Windows環境安裝Let&#039;s Go!
-date: 2023-09-10 02:00:00
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day2 工欲善其事，必先利其器--Flutter Windows環境安裝Let&#039;s Go!"
+date: 2025-12-25
 tags: [flutter, 環境安裝]
-
+categories: 技術文章
 source: https://ithelp.ithome.com.tw/articles/10314949
-series: Flutter 30天
-categories:
-  - Flutter 30天
 ---
 
 ### 由於Flutter最為人稱道的便是完善的官方文件，因此我們也試著遵循著堪稱教科書的文件開始吧!
@@ -31,9 +28,9 @@ categories:
 
 在Windows上運行Flutter的最低需求如下:
 
-1. $1
+1. 作業系統:  Windows 10 以上(64-bit)，並且需是x86-64架構。
 
-2. $1
+2. 硬碟空間:  1.64 GB (本限制不包含IDE與其他工具的佔用空間)
 
 其他工具:
 
@@ -69,7 +66,7 @@ Flutter SDK 解壓所檔: [flutter_windows_3.10.6-stable.zip](https://storage.go
 
 路徑名稱不能包含空格或特殊字元
 
-1. $1
+1. 不要將資料夾放置在需要權限的的路徑下(例如: C:\Program Files)
 
 ## 三、設定環境變數
 

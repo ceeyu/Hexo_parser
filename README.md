@@ -49,9 +49,14 @@ npm run server
 ### 3. 部署到 AWS
 
 ```cmd
+npm run deploy:full
+```
+
+或分步執行：
+```cmd
 npm run clean
 npm run build
-npm run deploy
+npm run deploy:s3
 ```
 
 ## 📝 文章管理
@@ -187,12 +192,21 @@ node tools/快速創建文章.js
 ### 部署命令
 
 ```cmd
-# 完整部署流程
-npm run clean && npm run build && npm run deploy
+# 完整部署流程（推薦）
+npm run deploy:full
 
-# 或使用快捷腳本
+# 或分步執行
+npm run clean
+npm run build
+npm run deploy:s3
+
+# 使用快捷腳本（部署 + Git 推送）
 tools\部署並推送.cmd "部署訊息"
 ```
+
+**注意：** 使用 `npm run deploy:s3` 需要先配置 AWS 憑證（`~/.aws/credentials`）
+
+詳細說明請參考：[🔧 S3部署路徑修復說明.md](./🔧%20S3部署路徑修復說明.md)
 
 ## 📖 文檔
 

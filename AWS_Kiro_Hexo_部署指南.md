@@ -5,8 +5,11 @@
 
 在這篇文章中，將撰寫如何使用 AWS 所推出的 AI 輔助開發工具 **Kiro**，結合 **Amazon S3** 與 **CloudFront** 建立一個完整的靜態網站部署流程。這個方案特別適合技術部落格、個人作品集或文件網站的託管需求!本專案以技術文章網站`[iThome](https://ithelp.ithome.com.tw/articles?tab=tech) 為範例
 
+
 ## Demo 影片
-{%youtube https://youtu.be/6TK7SkCooTA?si=afgp4gT1WURm1i-L %}  //複製這段
+Link: https://www.youtube.com/watch?v=6TK7SkCooTA
+<img width="2550" height="1202" alt="image" src="https://github.com/user-attachments/assets/81ae86da-eb35-4027-b945-f9c627362ed5" />
+
 
 ---
 

@@ -29,6 +29,18 @@
       <% } else { %>
         <p>還沒有文章</p>
       <% } %>
+      
+      <!-- 分頁導航 -->
+      <% if (page.total > 1) { %>
+        <nav class="pagination">
+          <%- paginator({
+            prev_text: '← 上一頁',
+            next_text: '下一頁 →',
+            mid_size: 2,
+            end_size: 1
+          }) %>
+        </nav>
+      <% } %>
     </div>
   </main>
   

@@ -1,0 +1,110 @@
+# Git 配置範例
+# 複製到 ~/.gitconfig 或使用 git config --global 命令設置
+
+[user]
+    name = Your Name
+    email = your.email@example.com
+
+[core]
+    editor = code --wait  # 使用 VS Code 作為編輯器
+    autocrlf = true       # Windows 使用 true，Mac/Linux 使用 input
+    quotepath = false     # 正確顯示中文文件名
+
+[alias]
+    # 狀態和日誌
+    st = status -sb
+    lg = log --oneline --graph --all --decorate
+    visual = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+    last = log -1 HEAD
+    
+    # 分支操作
+    co = checkout
+    cob = checkout -b
+    br = branch
+    brd = branch -d
+    brD = branch -D
+    
+    # 提交操作
+    ci = commit
+    cim = commit -m
+    ca = commit --amend
+    cam = commit --amend -m
+    
+    # 暫存操作
+    unstage = reset HEAD --
+    discard = checkout --
+    
+    # 差異比較
+    df = diff
+    dfc = diff --cached
+    dft = difftool
+    
+    # 遠端操作
+    pl = pull
+    ps = push
+    psu = push -u origin
+    
+    # 暫存工作
+    save = stash save
+    pop = stash pop
+    list = stash list
+    
+    # 其他實用命令
+    undo = reset --soft HEAD~1
+    amend = commit --amend --no-edit
+    contributors = shortlog -sn
+    aliases = config --get-regexp alias
+
+[color]
+    ui = auto
+    branch = auto
+    diff = auto
+    status = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+
+[push]
+    default = simple
+    followTags = true
+
+[pull]
+    rebase = false  # 使用 merge 策略
+
+[merge]
+    tool = vscode
+    conflictstyle = diff3
+
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+
+[diff]
+    tool = vscode
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[init]
+    defaultBranch = main
+
+[fetch]
+    prune = true  # 自動清理已刪除的遠端分支
+
+[rerere]
+    enabled = true  # 記住衝突解決方案
+
+[help]
+    autocorrect = 1  # 自動修正拼寫錯誤的命令

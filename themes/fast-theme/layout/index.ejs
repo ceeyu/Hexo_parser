@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'zh-TW' %>">
+<%- partial('partial/head') %>
+<body>
+  <%- partial('partial/header') %>
+  
+  <main class="site-main">
+    <div class="container">
+      <% page.posts.each(function(post) { %>
+        <%- partial('partial/article', {post: post, index: true}) %>
+      <% }); %>
+      
+      <% if (page.total > 1) { %>
+      <nav class="pagination">
+        <%- paginator({
+          prev_text: '← 上一頁',
+          next_text: '下一頁 →',
+          mid_size: 1
+        }) %>
+      </nav>
+      <% } %>
+    </div>
+  </main>
+  
+  <%- partial('partial/footer') %>
+</body>
+</html>

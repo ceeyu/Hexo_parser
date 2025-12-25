@@ -1,0 +1,33 @@
+{
+  "series": [
+    {
+      "name": "C++30日挑戰之旅",
+      "urls": [
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/5369",
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/5369?page=2",
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/5369?page=3"
+      ]
+    },
+    {
+      "name": "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】",
+      "urls": [
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/5953",
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/5953?page=2",
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/5953?page=3"
+      ]
+    },
+    {
+      "name": "【開局地端紅隊小白與雲端資安的清晨Punch】",
+      "urls": [
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/7285",
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/7285?page=2",
+        "https://ithelp.ithome.com.tw/users/20151593/ironman/7285?page=3"
+      ]
+    }
+  ],
+  "settings": {
+    "delayBetweenPages": 2000,
+    "delayBetweenArticles": 3000,
+    "skipExisting": true
+  }
+}

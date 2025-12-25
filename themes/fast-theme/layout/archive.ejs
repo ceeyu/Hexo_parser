@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'zh-TW' %>">
+<%- partial('partial/head') %>
+<body>
+  <%- partial('partial/header') %>
+  
+  <main class="site-main">
+    <div class="container">
+      <h1 class="archive-title">文章歸檔</h1>
+      
+      <% if (page.posts.length) { %>
+        <% var last; %>
+        <% page.posts.each(function(post) { %>
+          <% var year = post.date.year(); %>
+          <% if (last != year) { %>
+            <% if (last != null) { %></div><% } %>
+            <% last = year; %>
+            <div class="archive-year">
+              <h2 class="year-title"><%= year %></h2>
+          <% } %>
+          <article class="archive-post">
+            <time datetime="<%= post.date.toISOString() %>">
+              <%= post.date.format('MM-DD') %>
+            </time>
+            <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+          </article>
+        <% }); %>
+        </div>
+      <% } else { %>
+        <p>還沒有文章</p>
+      <% } %>
+    </div>
+  </main>
+  
+  <%- partial('partial/footer') %>
+</body>
+</html>

@@ -1,0 +1,16 @@
+改進版書籤代碼（已修正標題抓取問題）
+
+複製下面這一整行到書籤的網址欄：
+
+javascript:(function(){var titleEl=document.querySelector('title');var title='未知標題';if(titleEl){title=titleEl.textContent.replace(/\s*-\s*iT\s*邦幫忙.*$/i,'').replace(/\s*\|\s*iThome.*$/i,'').trim();}if(title==='未知標題'||!title){titleEl=document.querySelector('h2.qa-list__title,h1.qa-header__title,.profile-header__name');if(titleEl)title=titleEl.textContent.trim();}var dateEl=document.querySelector('time,.qa-list__info-time');var date=dateEl?(dateEl.getAttribute('datetime')||dateEl.textContent.trim()):new Date().toISOString().split('T')[0];if(date.includes('T'))date=date.split('T')[0];var tagEls=document.querySelectorAll('.tag,.qa-list__tag a');var tags=Array.from(tagEls).map(el=>el.textContent.trim()).filter(t=>t).filter((t,i,self)=>self.indexOf(t)===i).filter(t=>!t.match(/^\d+(th|st|nd|rd)鐵人賽$/)).filter(t=>!t.match(/^20\d{2}鐵人賽$/)).filter(t=>t!=='鐵人賽').slice(0,5);var contentEl=document.querySelector('.markdown__style,.qa-markdown,article');var content='';if(contentEl){var clone=contentEl.cloneNode(true);content=clone.innerHTML.replace(/<pre><code[^>]*>([\s\S]*?)<\/code><\/pre>/g,(match,code)=>{var decoded=code.replace(/<[^>]*>/g,'').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&').replace(/&quot;/g,'"');return'\n```\n'+decoded+'\n```\n';}).replace(/<h1[^>]*>(.*?)<\/h1>/g,'\n# $1\n').replace(/<h2[^>]*>(.*?)<\/h2>/g,'\n## $1\n').replace(/<h3[^>]*>(.*?)<\/h3>/g,'\n### $1\n').replace(/<h4[^>]*>(.*?)<\/h4>/g,'\n#### $1\n').replace(/<li[^>]*>(.*?)<\/li>/g,'- $1\n').replace(/<a[^>]*href="([^"]*)"[^>]*>(.*?)<\/a>/g,'[$2]($1)').replace(/<img[^>]*src="([^"]*)"[^>]*alt="([^"]*)"[^>]*>/g,'![$2]($1)').replace(/<img[^>]*src="([^"]*)"[^>]*>/g,'![]($1)').replace(/<strong[^>]*>(.*?)<\/strong>/g,'**$1**').replace(/<em[^>]*>(.*?)<\/em>/g,'*$1*').replace(/<p[^>]*>(.*?)<\/p>/g,'$1\n\n').replace(/<br\s*\/?>/g,'\n').replace(/<[^>]*>/g,'').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&nbsp;/g,' ').replace(/\n{3,}/g,'\n\n').trim();}var markdown='---\ntitle: '+title+'\ndate: '+date+'\ntags: ['+tags.join(', ')+']\ncategories: 技術文章\nsource: '+window.location.href+'\n---\n\n'+content+'\n';navigator.clipboard.writeText(markdown).then(()=>{alert('✅ 已複製 Markdown 格式！\n\n標題: '+title+'\n日期: '+date+'\n標籤: '+tags.join(', ')+'\n\n請貼到 Hexo 文章文件中');}).catch(err=>{var textarea=document.createElement('textarea');textarea.value=markdown;textarea.style.position='fixed';textarea.style.top='0';textarea.style.left='0';textarea.style.width='100%';textarea.style.height='100%';textarea.style.zIndex='9999';document.body.appendChild(textarea);textarea.select();document.execCommand('copy');document.body.removeChild(textarea);alert('✅ 已複製！\n\n標題: '+title);});})();
+
+---
+
+改進內容：
+1. ✅ 從 <title> 標籤抓取標題
+2. ✅ 自動移除 "- iT 邦幫忙" 等網站名稱
+3. ✅ 過濾重複標籤
+4. ✅ 移除無用的鐵人賽標籤
+5. ✅ 限制標籤數量為 5 個
+6. ✅ 改進日期格式處理
+7. ✅ 顯示更詳細的成功訊息

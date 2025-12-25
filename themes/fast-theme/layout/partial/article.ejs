@@ -1,0 +1,43 @@
+<article class="post">
+  <header class="post-header">
+    <h2 class="post-title">
+      <% if (post.link) { %>
+        <a href="<%- url_for(post.link) %>" target="_blank"><%= post.title %></a>
+      <% } else { %>
+        <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+      <% } %>
+    </h2>
+    <div class="post-meta">
+      <time datetime="<%= post.date.toISOString() %>">
+        <%= post.date.format('YYYY-MM-DD') %>
+      </time>
+      <% if (post.categories && post.categories.length) { %>
+        <span class="separator">•</span>
+        <% post.categories.forEach(function(cat) { %>
+          <a href="<%- url_for(cat.path) %>"><%= cat.name %></a>
+        <% }); %>
+      <% } %>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <% if (index) { %>
+      <%- post.excerpt || post.content.substring(0, 200) + '...' %>
+      <% if (post.excerpt) { %>
+        <a href="<%- url_for(post.path) %>" class="read-more">繼續閱讀 →</a>
+      <% } %>
+    <% } else { %>
+      <%- post.content %>
+    <% } %>
+  </div>
+  
+  <% if (!index && post.tags && post.tags.length) { %>
+  <footer class="post-footer">
+    <div class="post-tags">
+      <% post.tags.forEach(function(tag) { %>
+        <a href="<%- url_for(tag.path) %>">#<%= tag.name %></a>
+      <% }); %>
+    </div>
+  </footer>
+  <% } %>
+</article>

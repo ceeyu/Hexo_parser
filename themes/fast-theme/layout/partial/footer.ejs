@@ -1,0 +1,19 @@
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <%= new Date().getFullYear() %> <%= config.author || config.title %></p>
+    <p>
+      Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 
+      | Theme: Fast Theme
+    </p>
+    <% if (theme.social) { %>
+    <div class="social-links">
+      <% for (let name in theme.social) { %>
+        <a href="<%= theme.social[name] %>" target="_blank" rel="noopener"><%= name %></a>
+      <% } %>
+    </div>
+    <% } %>
+  </div>
+</footer>
+
+<!-- 延遲加載腳本 -->
+<script defer src="<%- url_for('/js/main.js') %>"></script>

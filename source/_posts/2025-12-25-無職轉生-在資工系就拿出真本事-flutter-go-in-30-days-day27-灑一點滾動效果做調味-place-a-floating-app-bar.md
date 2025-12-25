@@ -67,7 +67,7 @@ CustomScrollView(
 
 ## 三、Add a list of items using a SliverList
 
-再來，我們運用昨天提到的SliverList創立一個由Index0~999的項目列表
+再來，我們運用昨天提到的SliverList創立一個由Index0\~999的項目列表
 
 ```
 // 加入SliverList
@@ -157,13 +157,29 @@ class MyApp extends StatelessWidget {
 
 在HorizonsApp的class中，包含以下
 
-1. $1
+1. ---
+title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day27 灑一點滾動效果做調味，Place a floating app bar
+date: 2025-12-25
+tags: [flutter, scrolling]
+categories: 技術文章
+source: https://ithelp.ithome.com.tw/articles/10333869
+---
+
+
 
 - 為應用程式的主要入口點，繼承於StatelessWidget。
 
 - 創建了一個CustomScrollView，顯示SliverAppBar的背景圖片、標題與自定義設定。
 
-1. $1
+1. ---
+title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day27 灑一點滾動效果做調味，Place a floating app bar
+date: 2025-12-25
+tags: [flutter, scrolling]
+categories: 技術文章
+source: https://ithelp.ithome.com.tw/articles/10333869
+---
+
+
 
 - 一個自訂滾動列表，繼承自 StatelessWidget。
 
@@ -175,11 +191,27 @@ class MyApp extends StatelessWidget {
 
 ## 二、資料傳遞區塊
 
-1. $1
+1. ---
+title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day27 灑一點滾動效果做調味，Place a floating app bar
+date: 2025-12-25
+tags: [flutter, scrolling]
+categories: 技術文章
+source: https://ithelp.ithome.com.tw/articles/10333869
+---
+
+
 
 - 包含一些用於取得虛擬天氣資料的靜態方法，包括 getDailyForecastList 和 getDailyForecastByID。
 
-1. $1
+1. ---
+title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day27 灑一點滾動效果做調味，Place a floating app bar
+date: 2025-12-25
+tags: [flutter, scrolling]
+categories: 技術文章
+source: https://ithelp.ithome.com.tw/articles/10333869
+---
+
+
 
 - 表示每日天氣預報的資料模型(Model)。
 
@@ -187,13 +219,29 @@ class MyApp extends StatelessWidget {
 
 - 包含了一些獲取日期和星期幾資訊的方法。
 
-1. $1
+1. ---
+title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day27 灑一點滾動效果做調味，Place a floating app bar
+date: 2025-12-25
+tags: [flutter, scrolling]
+categories: 技術文章
+source: https://ithelp.ithome.com.tw/articles/10333869
+---
+
+
 
 - 一個自訂的滾動行為，用於保持在不同平台下滾動體驗的一致性。
 
 - 主要用於設定滾動條和滾動物理特性。
 
-1. $1
+1. ---
+title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day27 灑一點滾動效果做調味，Place a floating app bar
+date: 2025-12-25
+tags: [flutter, scrolling]
+categories: 技術文章
+source: https://ithelp.ithome.com.tw/articles/10333869
+---
+
+
 
 - 提供了一些虛擬資料，如每日天氣預報資訊和圖像連結。
 

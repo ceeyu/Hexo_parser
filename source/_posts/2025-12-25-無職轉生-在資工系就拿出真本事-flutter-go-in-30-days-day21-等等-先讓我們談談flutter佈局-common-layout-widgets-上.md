@@ -1,5 +1,5 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day21 等等，先讓我們談談Flutter佈局: Common layout widgets(上)
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day21 等等，先讓我們談談Flutter佈局: Common layout widgets(上)"
 date: 2025-12-25
 tags: [flutter, grid layout]
 categories: 技術文章

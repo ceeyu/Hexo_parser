@@ -22,10 +22,36 @@
   
   <div class="post-content">
     <% if (index) { %>
-      <%- post.excerpt || post.content.substring(0, 200) + '...' %>
-      <% if (post.excerpt) { %>
-        <a href="<%- url_for(post.path) %>" class="read-more">繼續閱讀 →</a>
-      <% } %>
+      <% 
+        // 生成摘要
+        let excerpt = '';
+        
+        if (post.excerpt) {
+          excerpt = post.excerpt;
+        } else if (post.content) {
+          // 移除 HTML 標籤和多餘空白
+          const plainText = post.content
+            .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+            .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
+            .replace(/<[^>]+>/g, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+          
+          if (plainText.length > 0) {
+            excerpt = plainText.substring(0, 200);
+            if (plainText.length > 200) {
+              excerpt += '...';
+            }
+          }
+        }
+        
+        // 如果還是沒有摘要，使用默認文字
+        if (!excerpt || excerpt.length < 10) {
+          excerpt = '點擊查看完整內容';
+        }
+      %>
+      <p><%= excerpt %></p>
+      <a href="<%- url_for(post.path) %>" class="read-more">繼續閱讀 →</a>
     <% } else { %>
       <%- post.content %>
     <% } %>

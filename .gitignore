@@ -1,3 +1,4 @@
+# Hexo
 .DS_Store
 Thumbs.db
 db.json
@@ -5,4 +6,38 @@ db.json
 node_modules/
 public/
 .deploy*/
-_multiconfig.yml
+.deploy_git*/
+.idea
+*.iml
+
+# 臨時文件
+debug_page.html
+*.tmp
+*.temp
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系統文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# AWS 憑證（重要！不要上傳）
+.aws/
+*.pem
+*.key
+
+# 環境變數
+.env
+.env.local
+.env.*.local
+
+# 日誌
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

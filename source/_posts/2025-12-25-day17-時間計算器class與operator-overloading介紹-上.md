@@ -45,7 +45,7 @@ public:
     int getYear();
     int getMonth();
     int getDay();
-    int getWeek(); //0~6 蔡勒公式
+    int getWeek(); //0\~6 蔡勒公式
     bool setDate(const int y, const int m, const int d);
     bool isLeap(int y);
     void output(); //輸出 year-month-day (week)

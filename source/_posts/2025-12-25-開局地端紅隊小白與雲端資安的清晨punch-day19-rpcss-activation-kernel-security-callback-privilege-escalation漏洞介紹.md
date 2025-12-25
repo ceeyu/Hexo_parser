@@ -1,5 +1,5 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day19: RPCSS Activation Kernel Security Callback Privilege Escalation漏洞介紹
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day19: RPCSS Activation Kernel Security Callback Privilege Escalation漏洞介紹"
 date: 2025-12-25
 tags: [漏洞介紹, 資訊安全]
 categories: 技術文章

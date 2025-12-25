@@ -20,9 +20,25 @@ source: https://ithelp.ithome.com.tw/articles/10327964
 
 倘若List內部需要有不同的子元件組成時，結構上，我們會遵照以下兩個步驟進行
 
-1. $1
+1. ---
+title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day24 再加一點點網格系統，Lists &amp; Grids(中)
+date: 2025-12-25
+tags: [flutter, list, grid]
+categories: 技術文章
+source: https://ithelp.ithome.com.tw/articles/10327964
+---
 
-2. $1
+
+
+2. ---
+title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day24 再加一點點網格系統，Lists &amp; Grids(中)
+date: 2025-12-25
+tags: [flutter, list, grid]
+categories: 技術文章
+source: https://ithelp.ithome.com.tw/articles/10327964
+---
+
+
 
 ## 一、建立不同型別物件的資料來源
 
@@ -234,7 +250,7 @@ class MessageItem implements ListItem {
 
 - 輸出結果
 
-我們可以看到，透過上面的程式便可產出以每六個子訊息具有一個標題的Mixed List效果，並且藉由滑輪可以看到具有所有index 0~999的結果。這種方式適合具有相同型態大量資訊的列表作為使用，並可藉由不同定義的資料元素來加以組合、展現。
+我們可以看到，透過上面的程式便可產出以每六個子訊息具有一個標題的Mixed List效果，並且藉由滑輪可以看到具有所有index 0\~999的結果。這種方式適合具有相同型態大量資訊的列表作為使用，並可藉由不同定義的資料元素來加以組合、展現。
 
 Index 0-9
 Index 990-999

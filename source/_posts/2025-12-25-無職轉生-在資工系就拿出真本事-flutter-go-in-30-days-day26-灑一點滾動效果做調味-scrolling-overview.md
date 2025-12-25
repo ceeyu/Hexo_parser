@@ -55,7 +55,7 @@ DraggableScrollableSheet(
 
 ### DraggableScrollableSheet 使用範例
 
-這個範例我們示範如何用DraggableScrollableSheet元件製作個預設佔有一半螢幕空間的List效果，index從0~24
+這個範例我們示範如何用DraggableScrollableSheet元件製作個預設佔有一半螢幕空間的List效果，index從0\~24
 
 ```
 import 'package:flutter/material.dart';
@@ -177,7 +177,7 @@ delegate: SliverChildBuilderDelegate(
                     ),
                   );
                 },
-                childCount: 2, //index值為0~1
+                childCount: 2, //index值為0\~1
               ),
 ```
 
@@ -191,9 +191,9 @@ delegate: SliverChildBuilderDelegate(
 
 接下來，slivers內具有兩個SliverGrid元件，分別包含了上面提及的SliverChildBuilderDelegate元件，其中
 
-- 第一個SliverGrid內，有兩列SliverChildBuilderDelegate，並且每個卡片子索引ListTile由0~9計算
+- 第一個SliverGrid內，有兩列SliverChildBuilderDelegate，並且每個卡片子索引ListTile由0\~9計算
 
-- 第二個SliverGrid內，同樣有兩列SliverChildBuilderDelegate，並且每個卡片子索引ListTile做了"subindex+5"的變化，由5~14計算
+- 第二個SliverGrid內，同樣有兩列SliverChildBuilderDelegate，並且每個卡片子索引ListTile做了"subindex+5"的變化，由5\~14計算
 
 最後我們會再由semanticIndexOffset: 2代表兩行卡片間的 index (第一行為Griditem 0-1、第二行為2-3)，相差(偏移量)為2
 
@@ -231,7 +231,7 @@ class MyApp extends StatelessWidget {
                             itemCount: 10, // 列表中的項目數
                             itemBuilder: (BuildContext context, int subIndex) {
                               return ListTile(
-                                title: Text('Sub Item $subIndex'), //設為卡片索引號，為0~9
+                                title: Text('Sub Item $subIndex'), //設為卡片索引號，為0\~9
                               );
                             },
                           ),
@@ -259,7 +259,7 @@ class MyApp extends StatelessWidget {
                             itemCount: 10, // 列表中的項目數
                             itemBuilder: (BuildContext context, int subIndex) {
                               return ListTile(
-                                title: Text('Sub Item ${subIndex + 5}'), //設為卡片索引號+5，為5~14
+                                title: Text('Sub Item ${subIndex + 5}'), //設為卡片索引號+5，為5\~14
                               );
                             },
                           ),

@@ -56,6 +56,18 @@ prismjs:
   line_number: true
   tab_replace: ''
 
+# Markdown 渲染設定
+marked:
+  gfm: true
+  pedantic: false
+  breaks: true
+  smartLists: true
+  smartypants: true
+  modifyAnchors: 0
+  autolink: true
+  sanitizeUrl: false
+  headerIds: true
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)

@@ -1,9 +1,12 @@
 ---
 title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day3 AWS EC2介紹
-date: 2025-12-25
+date: 2024-08-13 03:00:00
 tags: [雲端, aws ec2]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10344509
+series: 雲端資安
+categories:
+  - 雲端資安
 ---
 
 # 壹、AWS EC2介紹

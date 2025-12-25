@@ -1,9 +1,12 @@
 ---
 title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day13 DVWA 使用(File Uploade Attack)
-date: 2025-12-25
+date: 2024-08-23 13:00:00
 tags: [dvwa, 資訊安全]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10345882
+series: 雲端資安
+categories:
+  - 雲端資安
 ---
 
 # 陸、Usage(使用方式)---File Uploade Attack

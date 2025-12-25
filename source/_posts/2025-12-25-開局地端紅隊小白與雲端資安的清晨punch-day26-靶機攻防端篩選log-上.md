@@ -1,9 +1,12 @@
 ---
 title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day26 靶機攻防端篩選Log(上)
-date: 2025-12-25
+date: 2024-09-05 26:00:00
 tags: [資訊安全]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10348063
+series: 雲端資安
+categories:
+  - 雲端資安
 ---
 
 # 靶機攻防端篩選Log

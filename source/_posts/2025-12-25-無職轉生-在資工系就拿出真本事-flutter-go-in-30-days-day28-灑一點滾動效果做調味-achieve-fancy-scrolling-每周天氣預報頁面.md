@@ -1,9 +1,12 @@
 ---
 title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day28 灑一點滾動效果做調味，Achieve fancy scrolling 每周天氣預報頁面
-date: 2025-12-25
+date: 2023-10-06 28:00:00
 tags: [flutter, scrolling]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10333873
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 # 參、Achieve fancy scrolling: 每周天氣預報頁面展示

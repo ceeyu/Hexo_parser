@@ -1,9 +1,12 @@
 ---
 title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day29 灑一點滾動效果做調味，Scrolling parallax effect滾動視差效果
-date: 2025-12-25
+date: 2023-10-07 29:00:00
 tags: [flutter, scrolling, parallax]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10334494
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 # 肆、Create a scrolling parallax effect

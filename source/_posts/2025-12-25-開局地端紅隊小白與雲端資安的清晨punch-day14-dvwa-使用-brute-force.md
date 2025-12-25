@@ -1,9 +1,12 @@
 ---
 title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day14 DVWA 使用(Brute Force)
-date: 2025-12-25
+date: 2024-08-24 14:00:00
 tags: [dvwa, 資訊安全]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10346070
+series: 雲端資安
+categories:
+  - 雲端資安
 ---
 
 # 陸、Usage(使用方式)---Brute Force

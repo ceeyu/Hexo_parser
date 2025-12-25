@@ -1,9 +1,12 @@
 ---
 title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day19 等等，先讓我們談談Flutter佈局: Layouts in Flutter(上)"
-date: 2025-12-25
+date: 2023-09-27 19:00:00
 tags: [flutter, layout]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10317411
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 參見: [Layouts in Flutter](https://docs.flutter.dev/ui/layout#lay-out-a-widget)

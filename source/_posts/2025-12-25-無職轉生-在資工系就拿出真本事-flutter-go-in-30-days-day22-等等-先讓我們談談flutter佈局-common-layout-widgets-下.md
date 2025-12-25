@@ -1,9 +1,12 @@
 ---
 title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day22 等等，先讓我們談談Flutter佈局: Common layout widgets(下)"
-date: 2025-12-25
+date: 2023-09-30 22:00:00
 tags: [flutter, layout]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10317414
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 # 肆、Standard widgets

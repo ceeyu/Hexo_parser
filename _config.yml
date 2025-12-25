@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: XianYu Blog
+subtitle: 'iThome 鐵人賽文章集'
+description: 'C++、Flutter、雲端資安技術文章'
+keywords: C++, Flutter, 雲端資安, 程式設計
+author: XianYu
+language: zh-TW
 timezone: ''
 
 # URL
@@ -75,7 +75,7 @@ marked:
 index_generator:
   path: ''
   per_page: 10
-  order_by: -date
+  order_by: date
 
 # Category & Tag
 default_category: uncategorized

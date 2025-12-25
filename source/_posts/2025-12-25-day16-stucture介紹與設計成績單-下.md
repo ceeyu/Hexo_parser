@@ -1,9 +1,12 @@
 ---
 title: DAY16 stucture介紹與設計成績單(下)
-date: 2025-12-25
+date: 2022-09-17 16:00:00
 tags: []
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10289296
+series: C++ 基礎教學
+categories:
+  - C++ 基礎教學
 ---
 
 ## 題目:

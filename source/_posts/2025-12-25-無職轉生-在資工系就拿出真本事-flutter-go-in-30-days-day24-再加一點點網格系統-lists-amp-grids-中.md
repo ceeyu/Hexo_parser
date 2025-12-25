@@ -1,9 +1,12 @@
 ---
 title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day24 再加一點點網格系統，Lists &amp; Grids(中)
-date: 2025-12-25
+date: 2023-10-02 24:00:00
 tags: [flutter, list, grid]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10327964
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 # 參、不同類型List處理---Create lists with different types of items

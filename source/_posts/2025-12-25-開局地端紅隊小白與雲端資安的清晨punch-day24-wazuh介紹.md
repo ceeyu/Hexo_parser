@@ -1,9 +1,12 @@
 ---
 title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day24 Wazuh介紹
-date: 2025-12-25
+date: 2024-09-03 24:00:00
 tags: [wazuh, 資訊安全]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10347663
+series: 雲端資安
+categories:
+  - 雲端資安
 ---
 
 Wazuh 是一個開源且高度可擴展的安全監控與管理平台，廣泛應用於入侵檢測、合規性監控、威脅偵測以及安全事件管理。

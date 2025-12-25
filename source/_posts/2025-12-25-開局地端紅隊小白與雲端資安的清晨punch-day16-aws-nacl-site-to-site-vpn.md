@@ -1,9 +1,12 @@
 ---
 title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day16 AWS NACL, site to site VPN
-date: 2025-12-25
+date: 2024-08-26 16:00:00
 tags: [防火牆, nacl]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10346327
+series: 雲端資安
+categories:
+  - 雲端資安
 ---
 
 # 防禦策略與防火牆設定

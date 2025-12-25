@@ -1,9 +1,12 @@
 ---
 title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day2 工欲善其事，必先利其器--Flutter Windows環境安裝Let&#039;s Go!
-date: 2025-12-25
+date: 2023-09-10 02:00:00
 tags: [flutter, 環境安裝]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10314949
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 ### 由於Flutter最為人稱道的便是完善的官方文件，因此我們也試著遵循著堪稱教科書的文件開始吧!

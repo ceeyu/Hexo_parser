@@ -1,9 +1,12 @@
 ---
 title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day12 Dart君：Come On ~更深層的認識我吧，Functions
-date: 2025-12-25
+date: 2023-09-20 12:00:00
 tags: [flutter, dart]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10314963
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 # 壹、Functions: 函數

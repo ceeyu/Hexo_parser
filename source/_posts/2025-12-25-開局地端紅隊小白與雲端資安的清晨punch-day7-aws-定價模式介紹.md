@@ -1,9 +1,12 @@
 ---
 title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day7 AWS 定價模式介紹
-date: 2025-12-25
+date: 2024-08-17 07:00:00
 tags: [aws, 定價模型]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10345036
+series: 雲端資安
+categories:
+  - 雲端資安
 ---
 
 # 壹、AWS 定價模式介紹

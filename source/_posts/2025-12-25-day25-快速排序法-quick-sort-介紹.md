@@ -1,9 +1,12 @@
 ---
 title: DAY25 快速排序法(quick sort)介紹
-date: 2025-12-25
+date: 2022-09-26 25:00:00
 tags: []
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10294884
+series: C++ 基礎教學
+categories:
+  - C++ 基礎教學
 ---
 
 ## 快速排序法(quick sort)介紹

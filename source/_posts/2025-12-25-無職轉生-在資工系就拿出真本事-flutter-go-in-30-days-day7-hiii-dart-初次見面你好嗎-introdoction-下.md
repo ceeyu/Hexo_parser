@@ -1,9 +1,12 @@
 ---
 title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day7 Hiii，Dart，初次見面你好嗎，Introdoction(下)
-date: 2025-12-25
+date: 2023-09-15 07:00:00
 tags: [flutter, dart]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10314956
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 # 參、Introduction---Classes, Enums

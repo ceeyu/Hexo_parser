@@ -1,9 +1,12 @@
 ---
 title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day14 一窺Flutter，Basic Widgets 與他的產地(上)
-date: 2025-12-25
+date: 2023-09-22 14:00:00
 tags: [flutter, basic widgets]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10315057
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 # 壹、Flutter指令

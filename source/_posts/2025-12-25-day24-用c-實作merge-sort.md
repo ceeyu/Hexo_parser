@@ -1,9 +1,12 @@
 ---
 title: DAY24 用C++實作merge sort
-date: 2025-12-25
+date: 2022-09-25 24:00:00
 tags: []
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10294883
+series: C++ 基礎教學
+categories:
+  - C++ 基礎教學
 ---
 
 ## pseudocode詳細解釋

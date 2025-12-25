@@ -1,9 +1,12 @@
 ---
 title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day27 灑一點滾動效果做調味，Place a floating app bar
-date: 2025-12-25
+date: 2023-10-05 27:00:00
 tags: [flutter, scrolling]
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10333869
+series: Flutter 30天
+categories:
+  - Flutter 30天
 ---
 
 # 貳、Place a floating app bar above a list

@@ -1,9 +1,12 @@
 ---
 title: DAY26  用C++實作quick sort
-date: 2025-12-25
+date: 2022-09-27 26:00:00
 tags: []
-categories: 技術文章
+
 source: https://ithelp.ithome.com.tw/articles/10294885
+series: C++ 基礎教學
+categories:
+  - C++ 基礎教學
 ---
 
 ## 題目:

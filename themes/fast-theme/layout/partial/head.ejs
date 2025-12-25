@@ -20,11 +20,7 @@
     a:hover{text-decoration:underline}
   </style>
   
-  <!-- 完整樣式表（異步加載） -->
-  <link rel="stylesheet" href="<%- url_for('/css/style.css') %>" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="<%- url_for('/css/animations.css') %>" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
-    <link rel="stylesheet" href="<%- url_for('/css/animations.css') %>">
-  </noscript>
+  <!-- 完整樣式表 -->
+  <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
+  <link rel="stylesheet" href="<%- url_for('/css/animations.css') %>">
 </head>

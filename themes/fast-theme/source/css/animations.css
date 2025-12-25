@@ -138,13 +138,21 @@
 .delay-5 { animation-delay: calc(var(--animation-delay) * 5); }
 
 /* ===== 滾動觸發動畫 ===== */
+/* 預設可見，JS 載入後才啟用動畫 */
 .scroll-animate {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.6s var(--animation-easing),
               transform 0.6s var(--animation-easing);
 }
 
+/* JS 啟用動畫後的初始狀態 */
+.js-enabled .scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-enabled .scroll-animate.is-visible,
 .scroll-animate.is-visible {
   opacity: 1;
   transform: translateY(0);
@@ -244,13 +252,21 @@
 }
 
 /* ===== 卡片動畫 ===== */
+/* 預設可見，JS 載入後才啟用動畫 */
 .card-animate {
-  opacity: 0;
-  transform: translateY(30px) scale(0.95);
+  opacity: 1;
+  transform: translateY(0) scale(1);
   transition: opacity 0.5s var(--animation-easing),
               transform 0.5s var(--animation-easing);
 }
 
+/* JS 啟用動畫後的初始狀態 */
+.js-enabled .card-animate {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+}
+
+.js-enabled .card-animate.is-visible,
 .card-animate.is-visible {
   opacity: 1;
   transform: translateY(0) scale(1);

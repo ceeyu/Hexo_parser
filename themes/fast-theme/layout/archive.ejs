@@ -6,7 +6,7 @@
   
   <main class="site-main">
     <div class="container">
-      <h1 class="archive-title">文章歸檔</h1>
+      <h1 class="archive-title animate-fade-in-up">文章歸檔</h1>
       
       <% if (page.posts.length) { %>
         <% var last; %>
@@ -16,9 +16,9 @@
             <% if (last != null) { %></div><% } %>
             <% last = year; %>
             <div class="archive-year">
-              <h2 class="year-title"><%= year %></h2>
+              <h2 class="year-title animate-fade-in-left"><%= year %></h2>
           <% } %>
-          <article class="archive-post">
+          <article class="archive-post scroll-animate">
             <time datetime="<%= post.date.toISOString() %>">
               <%= post.date.format('MM-DD') %>
             </time>

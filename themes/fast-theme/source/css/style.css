@@ -80,6 +80,13 @@ a:hover {
   padding-bottom: 40px;
   border-bottom: 1px solid var(--border-color);
   min-height: 200px; /* 確保最小高度 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.post:hover {
+  background: rgba(0, 102, 204, 0.02);
 }
 
 .post:last-child {
@@ -281,11 +288,12 @@ a:hover {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 4px;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .archive-post:hover {
   background: var(--code-bg);
+  transform: translateX(5px);
 }
 
 .archive-post time {

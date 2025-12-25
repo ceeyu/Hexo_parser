@@ -271,8 +271,22 @@
       return;
     }
 
-    // 初始化滾動動畫
-    new ScrollAnimator();
+    // 初始化滾動動畫觀察器
+    const scrollAnimator = new ScrollAnimator();
+
+    // 標記 JS 已啟用，啟用動畫
+    document.documentElement.classList.add('js-enabled');
+
+    // 立即觸發已在視窗內的元素動畫
+    setTimeout(() => {
+      const elements = document.querySelectorAll('.scroll-animate, .card-animate');
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('is-visible');
+        }
+      });
+    }, 50);
 
     // 初始化閱讀進度條（僅在文章頁）
     if (document.querySelector('.post-content')) {
@@ -287,19 +301,6 @@
 
     // 初始化卡片懸停效果
     initCardHoverEffects();
-
-    // 為標題添加淡入動畫
-    const titles = document.querySelectorAll('.post-title, .archive-title');
-    titles.forEach((title, index) => {
-      title.classList.add('animate-fade-in-up', `delay-${Math.min(index + 1, 5)}`);
-    });
-
-    // 為文章卡片添加動畫
-    const posts = document.querySelectorAll('.post');
-    posts.forEach((post, index) => {
-      post.classList.add('card-animate');
-      post.style.transitionDelay = `${index * 0.1}s`;
-    });
   }
 
   // ===== 導出到全局 =====

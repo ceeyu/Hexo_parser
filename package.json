@@ -7,7 +7,9 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "deploy:s3": "node tools/deploy-to-s3.js",
+    "deploy:sync": "node tools/deploy-to-s3-sync.js",
     "deploy:full": "npm run clean && npm run build && npm run deploy:s3",
+    "deploy:quick": "npm run build && npm run deploy:sync",
     "server": "hexo server"
   },
   "hexo": {

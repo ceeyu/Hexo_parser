@@ -1,27 +1,35 @@
-/* Fast Theme - 現代化極速主題 */
+/* Fast Theme - 賽博龐克風格主題 */
 
-/* ===== CSS 變數 ===== */
+/* ===== CSS 變數 - Cyberpunk 2077 配色 ===== */
 :root {
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --primary-light: #818cf8;
-  --accent: #06b6d4;
-  --accent-light: #22d3ee;
-  --text: #1e293b;
-  --text-light: #64748b;
-  --text-muted: #94a3b8;
-  --bg: #f8fafc;
-  --bg-card: #ffffff;
-  --border: #e2e8f0;
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-  --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  --primary: #05d9e8;
+  --primary-dark: #01a7b5;
+  --primary-light: #65f0ff;
+  --accent: #ff2a6d;
+  --accent-light: #ff6b9d;
+  --text: #e0e0e0;
+  --text-light: #a0a0a0;
+  --text-muted: #707070;
+  --bg: #0d0221;
+  --bg-card: rgba(13, 2, 33, 0.95);
+  --border: rgba(5, 217, 232, 0.3);
+  --shadow-sm: 0 0 5px rgba(5, 217, 232, 0.2);
+  --shadow: 0 0 15px rgba(5, 217, 232, 0.3);
+  --shadow-lg: 0 0 30px rgba(5, 217, 232, 0.4);
+  --shadow-xl: 0 0 50px rgba(5, 217, 232, 0.5);
   --gradient: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-  --gradient-soft: linear-gradient(135deg, rgba(99,102,241,0.1) 0%, rgba(6,182,212,0.1) 100%);
-  --radius: 16px;
-  --radius-sm: 8px;
+  --gradient-soft: linear-gradient(135deg, rgba(5,217,232,0.1) 0%, rgba(255,42,109,0.1) 100%);
+  --radius: 4px;
+  --radius-sm: 2px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Cyberpunk 專用 */
+  --cyber-pink: #ff2a6d;
+  --cyber-cyan: #05d9e8;
+  --cyber-yellow: #f9f002;
+  --cyber-purple: #d300c5;
+  --neon-glow: 0 0 10px var(--cyber-cyan), 0 0 20px var(--cyber-cyan);
+  --pink-glow: 0 0 10px var(--cyber-pink), 0 0 20px var(--cyber-pink);
 }
 
 /* ===== 基礎重置 ===== */
@@ -48,16 +56,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 背景裝飾 */
+/* 背景裝飾 - 賽博龐克網格 */
 body::before {
   content: '';
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 400px;
-  background: var(--gradient);
-  opacity: 0.03;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at bottom, #1b2735 0%, var(--bg) 100%),
+    linear-gradient(rgba(5, 217, 232, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(5, 217, 232, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
   z-index: -1;
   pointer-events: none;
 }
@@ -85,9 +96,9 @@ a:hover {
   color: var(--primary-dark);
 }
 
-/* ===== 頭部 ===== */
+/* ===== 頭部 - 賽博龐克風格 ===== */
 .site-header {
-  background: rgba(255,255,255,0.8);
+  background: rgba(13, 2, 33, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
@@ -96,11 +107,12 @@ a:hover {
   top: 0;
   z-index: 100;
   transition: var(--transition);
+  box-shadow: 0 0 20px rgba(5, 217, 232, 0.2);
 }
 
 .site-header.scrolled {
   padding: 12px 0;
-  box-shadow: var(--shadow);
+  box-shadow: var(--neon-glow);
 }
 
 .header-content {
@@ -114,14 +126,19 @@ a:hover {
 .site-title {
   font-size: 28px;
   font-weight: 800;
-  letter-spacing: -0.5px;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', 'JetBrains Mono', monospace;
 }
 
 .site-title a {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--cyber-cyan);
+  text-shadow: var(--neon-glow);
+  transition: var(--transition);
+}
+
+.site-title a:hover {
+  color: var(--cyber-pink);
+  text-shadow: var(--pink-glow);
 }
 
 .site-nav {
@@ -136,11 +153,15 @@ a:hover {
   padding: 8px 16px;
   border-radius: var(--radius-sm);
   transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
 }
 
 .site-nav a:hover {
-  color: var(--primary);
-  background: var(--gradient-soft);
+  color: var(--cyber-cyan);
+  border-color: var(--cyber-cyan);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ===== 主內容區 ===== */
@@ -149,7 +170,7 @@ a:hover {
   min-height: calc(100vh - 200px);
 }
 
-/* ===== 文章卡片 ===== */
+/* ===== 文章卡片 - 賽博龐克風格 ===== */
 .post {
   background: var(--bg-card);
   border-radius: var(--radius);
@@ -162,28 +183,32 @@ a:hover {
   overflow: hidden;
 }
 
-/* 卡片裝飾線 */
+/* 卡片霓虹邊框效果 */
 .post::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: var(--gradient);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 2px;
+  background: linear-gradient(90deg, var(--cyber-cyan), var(--cyber-pink), var(--cyber-cyan));
+  background-size: 200% 100%;
+  animation: borderGlow 3s linear infinite;
+}
+
+@keyframes borderGlow {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
 }
 
 .post:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-xl);
-  border-color: transparent;
+  box-shadow: var(--shadow-lg);
+  border-color: var(--cyber-cyan);
 }
 
 .post:hover::before {
-  transform: scaleX(1);
+  height: 3px;
 }
 
 .post:last-child {
@@ -266,26 +291,30 @@ a:hover {
   margin-bottom: 16px;
 }
 
-/* 繼續閱讀按鈕 */
+/* 繼續閱讀按鈕 - 賽博龐克風格 */
 .read-more {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   margin-top: 20px;
   padding: 12px 24px;
-  background: var(--gradient);
-  color: white !important;
+  background: transparent;
+  border: 2px solid var(--cyber-cyan);
+  color: var(--cyber-cyan) !important;
   font-weight: 600;
   font-size: 14px;
-  border-radius: 50px;
+  border-radius: var(--radius);
   transition: var(--transition);
-  box-shadow: 0 4px 14px rgba(99,102,241,0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', monospace;
 }
 
 .read-more:hover {
+  background: var(--cyber-cyan);
+  color: var(--bg) !important;
+  box-shadow: var(--neon-glow);
   transform: translateX(4px);
-  box-shadow: 0 6px 20px rgba(99,102,241,0.5);
-  color: white !important;
 }
 
 .read-more::after {
@@ -434,13 +463,24 @@ a:hover {
   color: var(--primary);
 }
 
-/* ===== 底部 ===== */
+/* ===== 底部 - 賽博龐克風格 ===== */
 .site-footer {
-  background: var(--bg-card);
+  background: rgba(13, 2, 33, 0.98);
   border-top: 1px solid var(--border);
   padding: 48px 0;
   margin-top: 80px;
   text-align: center;
+  position: relative;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--cyber-cyan), var(--cyber-pink), var(--cyber-cyan), transparent);
 }
 
 .site-footer p {
@@ -694,10 +734,10 @@ a:hover {
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* ===== 滾動條美化 ===== */
+/* ===== 滾動條美化 - 賽博龐克風格 ===== */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -705,45 +745,52 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 5px;
+  background: var(--cyber-cyan);
+  border-radius: 4px;
+  box-shadow: 0 0 10px var(--cyber-cyan);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
+  background: var(--cyber-pink);
+  box-shadow: 0 0 10px var(--cyber-pink);
 }
 
 /* ===== 選取文字樣式 ===== */
 ::selection {
-  background: var(--primary);
+  background: var(--cyber-pink);
   color: white;
+  text-shadow: none;
 }
 
 
 /* ===== 首頁樣式 ===== */
 
-/* Hero 區塊 */
+/* Hero 區塊 - 賽博龐克風格 */
 .hero-section {
   text-align: center;
-  padding: 60px 0 40px;
+  padding: 80px 0 60px;
+  position: relative;
 }
 
 .hero-title {
-  font-size: 42px;
-  font-weight: 800;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--cyber-cyan);
+  text-shadow: var(--neon-glow);
   margin-bottom: 16px;
+  font-family: 'Orbitron', 'LXGW WenKai TC', sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .hero-subtitle {
   font-size: 18px;
   color: var(--text-light);
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 2px;
 }
 
-/* 系列卡片網格 */
+/* 系列卡片網格 - 賽博龐克風格 */
 .series-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -769,42 +816,60 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px;
   transition: height 0.3s ease;
 }
 
+.series-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(5, 217, 232, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.series-card:hover::after {
+  left: 100%;
+}
+
 .cpp-card::before {
-  background: linear-gradient(90deg, #00599C, #004482);
+  background: linear-gradient(90deg, #05d9e8, #01a7b5);
 }
 
 .flutter-card::before {
-  background: linear-gradient(90deg, #02569B, #13B9FD);
+  background: linear-gradient(90deg, #ff2a6d, #d300c5);
 }
 
 .security-card::before {
-  background: linear-gradient(90deg, #E53935, #FF5722);
+  background: linear-gradient(90deg, #f9f002, #ff9500);
 }
 
 .series-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
-  border-color: transparent;
+  box-shadow: var(--shadow-lg);
+  border-color: var(--cyber-cyan);
 }
 
 .series-card:hover::before {
-  height: 6px;
+  height: 5px;
 }
 
 .series-icon {
   font-size: 48px;
   margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px currentColor);
 }
 
 .series-title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 12px;
-  color: var(--text);
+  color: var(--cyber-cyan);
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
 }
 
 .series-description {
@@ -904,18 +969,22 @@ a:hover {
   display: inline-block;
   margin-top: 24px;
   padding: 12px 24px;
-  background: var(--gradient);
-  color: white;
-  border-radius: 50px;
+  background: transparent;
+  border: 2px solid var(--cyber-pink);
+  color: var(--cyber-pink);
+  border-radius: var(--radius);
   font-weight: 600;
   text-decoration: none;
   transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', monospace;
 }
 
 .view-all:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(99,102,241,0.4);
-  color: white;
+  background: var(--cyber-pink);
+  color: var(--bg);
+  box-shadow: var(--pink-glow);
 }
 
 /* 響應式 */

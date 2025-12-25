@@ -76,7 +76,7 @@ aws cloudfront create-invalidation --distribution-id EMO5ZDCYTAEYA --paths "/*"
 
 ## 🔗 連結
 
-- **線上網站**：https://d2a6bp0l8ylxw.cloudfront.net
+- **線上網站**：https://d34eallw8vaf1d.cloudfront.net/archives/
 - **GitHub**：https://github.com/ceeyu/Hexo_parser
 
 ---

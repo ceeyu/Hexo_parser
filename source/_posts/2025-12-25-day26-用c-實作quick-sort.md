@@ -1,5 +1,5 @@
 ---
-title: DAY26  用C++實作quick sort
+title: "DAY26  用C++實作quick sort"
 date: 2025-12-25
 tags: []
 categories: 技術文章

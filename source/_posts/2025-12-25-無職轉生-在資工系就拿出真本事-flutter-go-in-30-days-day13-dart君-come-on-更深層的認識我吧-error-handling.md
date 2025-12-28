@@ -1,5 +1,5 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day13 Dart君：Come On ~更深層的認識我吧，Error handling
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day13 Dart君：Come On ~更深層的認識我吧，Error handling"
 date: 2025-12-25
 tags: [flutter, dart]
 categories: 技術文章

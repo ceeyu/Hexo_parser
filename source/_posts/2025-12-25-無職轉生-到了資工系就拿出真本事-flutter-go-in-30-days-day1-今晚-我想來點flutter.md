@@ -1,5 +1,5 @@
 ---
-title: 無職轉生～到了資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day1 今晚，我想來點Flutter!
+title: "無職轉生～到了資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day1 今晚，我想來點Flutter!"
 date: 2025-12-25
 tags: [flutter]
 categories: 技術文章

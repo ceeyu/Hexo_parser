@@ -1,5 +1,5 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day23 再加一點點網格系統，Lists &amp; Grids(上)
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day23 再加一點點網格系統，Lists &amp; Grids(上)"
 date: 2025-12-25
 tags: [flutter, list, grid]
 categories: 技術文章

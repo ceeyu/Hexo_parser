@@ -1,5 +1,5 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day4 EC2, too easy!
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day4 EC2, too easy!"
 date: 2025-12-25
 tags: [aws ec2, 雲端]
 categories: 技術文章

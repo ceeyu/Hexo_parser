@@ -1,5 +1,5 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day27 靶機攻防端篩選Log(下)
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day27 靶機攻防端篩選Log(下)"
 date: 2025-12-25
 tags: [資訊安全, wazuh]
 categories: 技術文章

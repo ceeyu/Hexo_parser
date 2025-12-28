@@ -3,12 +3,12 @@
 # 網站信息
 menu:
   首頁: /
-  歸檔: /archives
+  文章總覽: /archives
   關於: /about
 
 # 社交連結
 social:
-  GitHub: https://github.com/yourusername
+  GitHub: https://github.com/ceeyu
   iThome: https://ithelp.ithome.com.tw/users/20151593
 
 # 性能優化

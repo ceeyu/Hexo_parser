@@ -1,5 +1,5 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day6 Hiii，Dart，初次見面你好嗎，Introdoction(上)
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day6 Hiii，Dart，初次見面你好嗎，Introdoction(上)"
 date: 2025-12-25
 tags: [flutter, dart]
 categories: 技術文章

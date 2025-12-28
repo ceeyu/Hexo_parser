@@ -1,5 +1,5 @@
 ---
-title: DAY21 插入排序法(insertion sort)介紹
+title: "DAY21 插入排序法(insertion sort)介紹"
 date: 2025-12-25
 tags: []
 categories: 技術文章

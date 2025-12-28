@@ -1,5 +1,5 @@
 ---
-title: DAY24 用C++實作merge sort
+title: "DAY24 用C++實作merge sort"
 date: 2025-12-25
 tags: []
 categories: 技術文章

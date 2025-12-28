@@ -1,5 +1,5 @@
 ---
-title: DAY7用srand()與swich/case做出撲克牌發牌機
+title: "DAY7用srand()與swich/case做出撲克牌發牌機"
 date: 2025-12-25
 tags: []
 categories: 技術文章

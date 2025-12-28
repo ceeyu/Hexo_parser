@@ -1,5 +1,5 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day20 Windows Wannacry(EternalBlue) RCE攻擊介紹
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day20 Windows Wannacry(EternalBlue) RCE攻擊介紹"
 date: 2025-12-25
 tags: [資訊安全]
 categories: 技術文章

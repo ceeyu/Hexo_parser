@@ -1,5 +1,5 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day25 再加一點點網格系統，Lists &amp; Grids(下)
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day25 再加一點點網格系統，Lists &amp; Grids(下)"
 date: 2025-12-25
 tags: [flutter, list, grid]
 categories: 技術文章
@@ -18,7 +18,7 @@ source: https://ithelp.ithome.com.tw/articles/10327968
 
 在 SingleChildScrollView 裡面加一個 ConstrainedBox
 
-1. $1
+1. 建立一個有Spacer的Column
 
 ## 一、添加帶有SingleChildScrollView的 LayoutBuilder
 

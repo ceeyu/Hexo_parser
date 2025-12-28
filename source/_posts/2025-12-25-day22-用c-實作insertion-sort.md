@@ -1,5 +1,5 @@
 ---
-title: DAY22 用C++實作insertion sort
+title: "DAY22 用C++實作insertion sort"
 date: 2025-12-25
 tags: []
 categories: 技術文章

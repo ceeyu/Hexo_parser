@@ -1,5 +1,5 @@
 ---
-title: DAY2 用HelloWorld窺探程式基本架構
+title: "DAY2 用HelloWorld窺探程式基本架構"
 date: 2025-12-25
 tags: []
 categories: 技術文章

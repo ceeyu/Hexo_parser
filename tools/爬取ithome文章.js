@@ -73,7 +73,7 @@ function parseArticle(html) {
     })
     .replace(/<ol[^>]*>(.*?)<\/ol>/gs, (match, list) => {
       let counter = 1;
-      return list.replace(/<li[^>]*>(.*?)<\/li>/g, () => `${counter++}. $1\n`);
+      return list.replace(/<li[^>]*>(.*?)<\/li>/g, (m, item) => `${counter++}. ${item}\n`);
     })
     // 轉換連結
     .replace(/<a[^>]*href="([^"]*)"[^>]*>(.*?)<\/a>/g, '[$2]($1)')

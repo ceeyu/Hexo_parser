@@ -1,5 +1,5 @@
 ---
-title: DAY25 快速排序法(quick sort)介紹
+title: "DAY25 快速排序法(quick sort)介紹"
 date: 2025-12-25
 tags: []
 categories: 技術文章

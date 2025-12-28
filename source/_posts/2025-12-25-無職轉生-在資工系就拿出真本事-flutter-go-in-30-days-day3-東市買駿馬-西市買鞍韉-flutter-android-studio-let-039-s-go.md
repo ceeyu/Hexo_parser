@@ -1,5 +1,5 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day3 東市買駿馬，西市買鞍韉--Flutter Android Studio Let&#039;s Go!
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day3 東市買駿馬，西市買鞍韉--Flutter Android Studio Let&#039;s Go!"
 date: 2025-12-25
 tags: [flutter, 環境安裝]
 categories: 技術文章

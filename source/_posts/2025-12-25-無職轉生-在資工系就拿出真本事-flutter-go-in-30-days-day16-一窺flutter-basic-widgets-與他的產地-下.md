@@ -1,5 +1,5 @@
 ---
-title: 無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day16 一窺Flutter，Basic Widgets 與他的產地(下)
+title: "無職轉生～在資工系就拿出真本事٩(๑•̀ω•́๑)۶【Flutter Go in 30 Days】：Day16 一窺Flutter，Basic Widgets 與他的產地(下)"
 date: 2025-12-25
 tags: [flutter, basic widgets]
 categories: 技術文章

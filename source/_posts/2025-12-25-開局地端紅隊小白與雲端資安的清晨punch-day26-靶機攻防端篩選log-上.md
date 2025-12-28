@@ -1,5 +1,5 @@
 ---
-title: 【開局地端紅隊小白與雲端資安的清晨Punch】Day26 靶機攻防端篩選Log(上)
+title: "【開局地端紅隊小白與雲端資安的清晨Punch】Day26 靶機攻防端篩選Log(上)"
 date: 2025-12-25
 tags: [資訊安全]
 categories: 技術文章

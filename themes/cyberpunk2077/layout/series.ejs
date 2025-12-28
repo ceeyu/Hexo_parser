@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'zh-TW' %>">
+<%- partial('partial/head') %>
+<body class="cyber-body">
+  <!-- 背景效果層 -->
+  <div class="cyber-bg">
+    <div class="cyber-grid"></div>
+    <div class="cyber-scanline"></div>
+  </div>
+
+  <%- partial('partial/header') %>
+  
+  <main class="site-main">
+    <div class="container">
+      <%
+        var seriesType = page.series;
+        var seriesTitle = '';
+        var seriesDesc = '';
+        var titlePattern = null;
+        
+        if (seriesType === 'cpp') {
+          seriesTitle = 'C++ 基礎教學';
+          seriesDesc = '從零開始學習 C++ 程式設計，涵蓋基礎語法、資料結構與演算法';
+          titlePattern = /^DAY\d+/i;
+        } else if (seriesType === 'flutter') {
+          seriesTitle = 'Flutter 30天';
+          seriesDesc = '使用 Flutter 與 Dart 開發跨平台應用程式';
+          titlePattern = /flutter/i;
+        } else if (seriesType === 'security') {
+          seriesTitle = '雲端資安';
+          seriesDesc = '雲端安全、滲透測試與資安防護實戰';
+          titlePattern = /開局地端紅隊|資安|punch/i;
+        }
+        
+        // 篩選該系列的文章並轉為陣列
+        var seriesPosts = site.posts.toArray().filter(function(post) {
+          if (seriesType === 'cpp') {
+            return post.title.match(/^DAY\d+/i) && !post.title.match(/flutter/i);
+          } else if (seriesType === 'flutter') {
+            return post.title.match(/flutter/i);
+          } else if (seriesType === 'security') {
+            return post.title.match(/開局地端紅隊|punch/i);
+          }
+          return false;
+        });
+        
+        // 按照日期排序（從舊到新，Day 1 在前面）
+        seriesPosts.sort(function(a, b) {
+          return new Date(a.date) - new Date(b.date);  // 升序：舊的在前
+        });
+      %>
+      
+      <!-- 系列標題 -->
+      <section class="series-header">
+        <a href="<%- url_for('/') %>" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          返回首頁
+        </a>
+        <h1 class="series-title glitch-text" data-text="<%= seriesTitle %>"><%= seriesTitle %></h1>
+        <p class="series-desc"><%= seriesDesc %></p>
+        <div class="series-stats">
+          <span class="stat-badge">
+            <span class="stat-number"><%= seriesPosts.length %></span>
+            <span class="stat-label">篇文章</span>
+          </span>
+        </div>
+      </section>
+      
+      <!-- 文章列表 -->
+      <section class="series-posts">
+        <% seriesPosts.forEach(function(post, index) { %>
+          <article class="series-post-item" data-index="<%= index %>">
+            <div class="post-number"><%= String(index + 1).padStart(2, '0') %></div>
+            <a href="<%- url_for(post.path) %>" class="post-content">
+              <h3 class="post-title"><%= post.title %></h3>
+              <div class="post-meta">
+                <% if (post.tags && post.tags.length) { %>
+                  <% post.tags.toArray().slice(0, 3).forEach(function(tag) { %>
+                    <span class="post-tag"><%= tag.name %></span>
+                  <% }); %>
+                <% } %>
+              </div>
+            </a>
+            <div class="post-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </article>
+        <% }); %>
+      </section>
+    </div>
+  </main>
+  
+  <%- partial('partial/footer') %>
+  
+  <style>
+    .series-header {
+      text-align: center;
+      padding: 60px 0 40px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+    }
+    
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--neon-cyan, #00f0ff);
+      font-size: 14px;
+      margin-bottom: 20px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    
+    .back-link:hover {
+      opacity: 1;
+    }
+    
+    .series-title {
+      font-family: 'Orbitron', 'Inter', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: var(--neon-cyan, #00f0ff);
+      text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+      margin-bottom: 16px;
+    }
+    
+    .series-desc {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 24px;
+    }
+    
+    .series-stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .stat-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 240, 255, 0.1);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+    
+    .stat-number {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--neon-cyan, #00f0ff);
+    }
+    
+    .stat-label {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+    }
+    
+    .series-posts {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .series-post-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background: rgba(10, 10, 35, 0.6);
+      border: 1px solid rgba(0, 240, 255, 0.15);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .series-post-item:hover {
+      background: rgba(0, 240, 255, 0.05);
+      border-color: rgba(0, 240, 255, 0.4);
+      transform: translateX(8px);
+    }
+    
+    .post-number {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--neon-pink, #ff2a6d);
+      min-width: 40px;
+    }
+    
+    .post-content {
+      flex: 1;
+      text-decoration: none;
+    }
+    
+    .post-content .post-title {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+      transition: color 0.3s;
+    }
+    
+    .series-post-item:hover .post-title {
+      color: var(--neon-cyan, #00f0ff);
+    }
+    
+    .post-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .post-tag {
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      background: rgba(255, 42, 109, 0.2);
+      border: 1px solid rgba(255, 42, 109, 0.3);
+      border-radius: 3px;
+      color: var(--neon-pink, #ff2a6d);
+    }
+    
+    .post-arrow {
+      color: rgba(255, 255, 255, 0.3);
+      transition: all 0.3s;
+    }
+    
+    .series-post-item:hover .post-arrow {
+      color: var(--neon-cyan, #00f0ff);
+      transform: translateX(4px);
+    }
+    
+    .post-arrow svg {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</body>
+</html>

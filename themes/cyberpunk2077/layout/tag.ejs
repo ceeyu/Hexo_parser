@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'zh-TW' %>">
+<%- partial('partial/head') %>
+<body class="cyber-body">
+  <!-- 背景效果層 -->
+  <div class="cyber-bg">
+    <div class="cyber-grid"></div>
+    <div class="cyber-scanline"></div>
+  </div>
+
+  <%- partial('partial/header') %>
+  
+  <main class="site-main">
+    <div class="container">
+      <%
+        var tagName = page.tag;
+        
+        // 取得該 tag 的所有文章
+        var tagPosts = page.posts.toArray();
+        
+        // 按照日期排序（從舊到新，Day 1 在前面）
+        tagPosts.sort(function(a, b) {
+          return a.date - b.date;  // 升序：舊的在前
+        });
+      %>
+      
+      <!-- 標籤標題 -->
+      <section class="series-header">
+        <a href="<%- url_for('/') %>" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          返回首頁
+        </a>
+        <h1 class="series-title glitch-text" data-text="<%= tagName %>"><%= tagName %></h1>
+        <div class="series-stats">
+          <span class="stat-badge">
+            <span class="stat-number"><%= tagPosts.length %></span>
+            <span class="stat-label">篇文章</span>
+          </span>
+        </div>
+      </section>
+      
+      <!-- 文章列表 -->
+      <section class="series-posts">
+        <% tagPosts.forEach(function(post, index) { %>
+          <article class="series-post-item" data-index="<%= index %>">
+            <div class="post-number"><%= String(index + 1).padStart(2, '0') %></div>
+            <a href="<%- url_for(post.path) %>" class="post-content">
+              <h3 class="post-title"><%= post.title %></h3>
+              <div class="post-meta">
+                <time class="post-date"><%= post.date.format('YYYY.MM.DD') %></time>
+              </div>
+            </a>
+            <div class="post-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </article>
+        <% }); %>
+      </section>
+      
+      <!-- 分頁導航 -->
+      <% if (page.total > 1) { %>
+        <nav class="pagination">
+          <%- paginator({
+            prev_text: '← 上一頁',
+            next_text: '下一頁 →',
+            mid_size: 2,
+            end_size: 1
+          }) %>
+        </nav>
+      <% } %>
+    </div>
+  </main>
+  
+  <%- partial('partial/footer') %>
+  
+  <style>
+    .series-header {
+      text-align: center;
+      padding: 60px 0 40px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+    }
+    
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--neon-cyan, #00f0ff);
+      font-size: 14px;
+      margin-bottom: 20px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    
+    .back-link:hover {
+      opacity: 1;
+    }
+    
+    .series-title {
+      font-family: 'Orbitron', 'Inter', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: var(--neon-cyan, #00f0ff);
+      text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+      margin-bottom: 16px;
+    }
+    
+    .series-stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .stat-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 240, 255, 0.1);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+    
+    .stat-number {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--neon-cyan, #00f0ff);
+    }
+    
+    .stat-label {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+    }
+    
+    .series-posts {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .series-post-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+      background: rgba(10, 10, 35, 0.6);
+      border: 1px solid rgba(0, 240, 255, 0.15);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .series-post-item:hover {
+      background: rgba(0, 240, 255, 0.05);
+      border-color: rgba(0, 240, 255, 0.4);
+      transform: translateX(8px);
+    }
+    
+    .post-number {
+      font-family: 'Orbitron', monospace;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--neon-pink, #ff2a6d);
+      min-width: 40px;
+    }
+    
+    .post-content {
+      flex: 1;
+      text-decoration: none;
+    }
+    
+    .post-content .post-title {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+      transition: color 0.3s;
+    }
+    
+    .series-post-item:hover .post-title {
+      color: var(--neon-cyan, #00f0ff);
+    }
+    
+    .post-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .post-date {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .post-arrow {
+      color: rgba(255, 255, 255, 0.3);
+      transition: all 0.3s;
+    }
+    
+    .series-post-item:hover .post-arrow {
+      color: var(--neon-cyan, #00f0ff);
+      transform: translateX(4px);
+    }
+    
+    .post-arrow svg {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .pagination {
+      margin-top: 40px;
+      text-align: center;
+    }
+  </style>
+</body>
+</html>

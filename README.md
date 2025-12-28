@@ -246,7 +246,7 @@ tools\部署並推送.cmd "部署訊息"
 
 ## 🔗 連結
 
-- **線上網站**：http://xian-hexo-blog-2025.s3-website-ap-northeast-1.amazonaws.com
+- **線上網站**：https://d34eallw8vaf1d.cloudfront.net/
 - **GitHub 倉庫**：https://github.com/ceeyu/Hexo_parser
 - **iThome 個人頁**：https://ithelp.ithome.com.tw/users/20151593
 

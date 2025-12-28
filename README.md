@@ -78,6 +78,21 @@ aws cloudfront create-invalidation --distribution-id EMO5ZDCYTAEYA --paths "/*"
 
 - **線上網站**：https://d34eallw8vaf1d.cloudfront.net/
 - **GitHub**：https://github.com/ceeyu/Hexo_parser
+- **iThome 個人頁**：https://ithelp.ithome.com.tw/users/20151593
+
+## 📝 授權
+
+本項目採用 MIT 授權。
+
+## 🙏 致謝
+
+- [Hexo](https://hexo.io/) - 靜態網站生成器
+- [iThome](https://ithelp.ithome.com.tw/) - 文章來源
+- [AWS](https://aws.amazon.com/) - 雲端託管
+
+## 📧 聯絡
+
+如有問題或建議，歡迎開 Issue 或 Pull Request。
 
 ---
 
